@@ -1,4 +1,4 @@
-MiniJava
+Analisador Lexico MiniJava 
 ========
 
-A limited Java compiler project for CSE 401.
+http://www.cambridge.org/resources/052182060X/MCIIJ2e/grammar.htm#prod9

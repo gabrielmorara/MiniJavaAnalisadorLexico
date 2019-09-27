@@ -1,11 +1,14 @@
-package analisadorLexico;
-
 public class MinijavaSymbol {
 
+    // Palavra Reservada
     public static String pr = "< PR, ";
+    // Identificador
     public static String id = "< ID, ";
+    // Literal
     public static String literal = "< LT, ";
+    // Operador
     public static String op = "< OP, ";
+    // Sinal
     public static String sinal = "< SN, ";
 
     public static String symbol(String s) {
@@ -77,14 +80,14 @@ public class MinijavaSymbol {
                 case ";":
                     return sinal + "; >";
                 case "!":
-                    return sinal + "!";
+                    return op + "!";
                 default:
                     String regex = "[0-9]+";
                     if (s.matches(regex)) {
                         return literal + s + " >";
                     }
                     String regexVar = "([_]*[a-z]|[A-Z])+[_]*[0-9]*[_]*";
-                    if(s.matches(regexVar)){
+                    if (s.matches(regexVar)) {
                         return id + s + " >";
                     }
             }

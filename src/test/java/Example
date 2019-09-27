@@ -1,3 +1,1 @@
-a = b;
-b = a+(foo + bar)+baz;
-
+a = x + 3;
